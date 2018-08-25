@@ -3,9 +3,12 @@ function mostrarPrimos()
    var num1 = document.getElementById("n1").value;
    var num2 = document.getElementById("n2").value;
    var count = 0;
+
+   num1 = parseInt(num1);
+   num2 = parseInt(num2);
    
    if(num1 > 0)
-   {     if(num1 < num2)
+   {     if(num1 <= num2)
          {
            for(i = num1;i <= num2;i++) // percorre o intervalo dado
            {
